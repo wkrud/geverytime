@@ -43,12 +43,12 @@
 <link rel="stylesheet" href="<%=request.getContextPath() %>/css/admin/infoCheck.css" />
 <link rel="stylesheet" href="<%=request.getContextPath() %>/css/summernote/summernote-lite.css">
 <script src="<%= request.getContextPath() %>/js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a98891f9d7d85bc941b2188e046c3bfb&libraries=services,clusterer,drawing"></script>
 <script src="<%= request.getContextPath() %>/js/summernote/summernote-lite.js"></script>
 <script src="<%= request.getContextPath() %>/js/summernote/lang/summernote-ko-KR.js"></script>
 
 </head>
 <body>
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4247f28f0dc06c5cc8486ac837d411ff&libraries=services"></script>
 <div class="info-view-wrapper">
 	<div class="info-head-wrapper">
 		<div class="left-side">
@@ -290,7 +290,7 @@ geocoder.addressSearch('<%= info.getBusinessAddress() %>', function(result, stat
 		
 		// 인포윈도우로 장소에 대한 설명을 표시합니다
 		var infowindow = new kakao.maps.InfoWindow({
-		    content: '<div style="width:150px;text-align:center;padding:6px 0;">우리회사</div>'
+		    content: '<div style="width:150px;text-align:center;padding:6px 0;"><%= info.getBusinessName() %></div>'
 		});
 		infowindow.open(map, marker);
 		

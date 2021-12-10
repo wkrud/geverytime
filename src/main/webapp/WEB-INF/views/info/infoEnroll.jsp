@@ -9,7 +9,6 @@
 	String no = bno.substring(bno.length() - 1);
 %>
 <link rel="stylesheet" href="<%=request.getContextPath() %>/css/info/info.css" />
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4247f28f0dc06c5cc8486ac837d411ff&libraries=services,clusterer,drawing"></script>
 <div class="enroll-wrapper">
 	<%-- 전체 등록 폼 --%>
 	<form name="infoEnrollFrm" action="<%= request.getContextPath() %>/info/Enroll" 

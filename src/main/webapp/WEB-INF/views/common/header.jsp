@@ -21,6 +21,7 @@
 <link rel="stylesheet" href="<%=request.getContextPath() %>/css/board.css" />
 <link rel="stylesheet" href="<%=request.getContextPath() %>/css/summernote/summernote-lite.css">
 <script src="<%= request.getContextPath() %>/js/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a98891f9d7d85bc941b2188e046c3bfb&libraries=services,clusterer,drawing"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="<%= request.getContextPath() %>/js/summernote/summernote-lite.js"></script>
 <script src="<%= request.getContextPath() %>/js/summernote/lang/summernote-ko-KR.js"></script>

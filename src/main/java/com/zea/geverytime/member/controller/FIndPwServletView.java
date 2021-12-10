@@ -110,7 +110,7 @@ public class FIndPwServletView extends HttpServlet {
                 //email 전송
                 try {
                     MimeMessage msg = new MimeMessage(session);
-                    msg.setFrom(new InternetAddress("wonyoung2309@naver.com"));
+                    msg.setFrom(new InternetAddress("수신자이메일"));
                     msg.setRecipient(Message.RecipientType.TO, new InternetAddress(to_email));
                     
                     //메일 제목

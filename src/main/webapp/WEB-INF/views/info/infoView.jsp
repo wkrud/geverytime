@@ -33,7 +33,6 @@
 <%@ include file="/WEB-INF/views/common/header.jsp" %>
 <link rel="stylesheet" href="<%= request.getContextPath() %>/css/info/info.css" />
 <link rel="stylesheet" href="<%= request.getContextPath() %>/css/info/infoView.css" />
-<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4247f28f0dc06c5cc8486ac837d411ff&libraries=services,clusterer,drawing"></script>
 <div class="info-view-wrapper">
 <% if(loginMember != null && (info.getMemberId().equals(loginMember.getMemberId()) || MemberService.ADMIN_ROLE.equals(loginMember.getMemberRole()))){ %>
 	<form enctype="multipart/form-data" name="infoBoardModifyFrm" >
