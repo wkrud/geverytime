@@ -41,7 +41,8 @@ public class InfoAllListServlet extends HttpServlet {
             request.setAttribute("check", board);
 
             // 위치지정
-            String location = "/WEB-INF/views/info/" + board + ".jsp";
+//            String location = "/WEB-INF/views/info/" + board + ".jsp";
+            String location = "/WEB-INF/views/info/info.jsp";
             request
                 .getRequestDispatcher(location)
                 .forward(request, response);
